@@ -21,7 +21,7 @@ var authClientConfig = {
 //Constants and settings
 var PORT = (parseInt(configJson.workerServicePort)) ? parseInt(configJson.workerServicePort) : 9002;
 
-var authClient = configJson.authConfig.useFakeAuth ? authFake(authClientConfig) : auth() ;
+var authClient = configJson.authConfig.useFakeAuth ? authFake() : auth(authClientConfig);
 
 app.use(commonTools.expressRawBodyFromData);
 

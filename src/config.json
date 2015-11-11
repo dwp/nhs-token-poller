@@ -12,6 +12,6 @@
 	"enqueueFromWorkerBackToBridgeMethod": "enqueueFromWorkerBackToBridge",
 	"authConfig": {
 		"host": "gas.lh.iam.spine2.ncrs.nhs.uk",
-		"useFakeAuth": true
+		"useFakeAuth": false
 	}
 }
