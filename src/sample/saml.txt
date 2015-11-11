@@ -1,0 +1,176 @@
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" ResponseID="null" InResponseTo="null" MajorVersion="1" MinorVersion="1" IssueInstant="2015-11-11T11:36:07Z" Recipient="172.16.143.51">
+	<samlp:Status>
+		<samlp:StatusCode Value="samlp:Success"/>
+	</samlp:Status>
+	<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" MajorVersion="1" MinorVersion="1" AssertionID="c91b8ab926d2bf4ee17c1add7c23fdc506242a1ee" Issuer="http://iam-careid-development:8080" IssueInstant="2015-11-11T11:36:07Z">
+		<saml:Conditions NotBefore="2015-11-11T11:33:07Z" NotOnOrAfter="2015-11-11T11:37:07Z"/>
+		<saml:AttributeStatement>
+			<saml:Subject>
+				<saml:NameIdentifier NameQualifier="o=nhs">uid=240000109896,ou=People,o=nhs</saml:NameIdentifier>
+				<saml:SubjectConfirmation>
+					<saml:ConfirmationMethod>urn:com:sun:identity</saml:ConfirmationMethod>
+					<saml:SubjectConfirmationData>
+						<saml:Assertion MajorVersion="1" MinorVersion="1" AssertionID="7de6eb2dff0b439e091a6d4bcb9d3c35326a30cai" Issuer="http://iam-careid-development:8080" IssueInstant="2015-11-11T11:36:07Z">
+							<saml:Conditions NotBefore="2015-11-11T11:33:07Z" NotOnOrAfter="2015-11-11T11:37:07Z"/>
+							<saml:AuthenticationStatement AuthenticationInstant="2015-11-11T11:35:10Z" AuthenticationMethod="urn:com:sun:identity:ExtendedLoginModule">
+								<saml:Subject>
+									<saml:NameIdentifier NameQualifier="o=nhs">uid=240000109896,ou=People,o=nhs</saml:NameIdentifier>
+									<saml:SubjectConfirmation>
+										<saml:ConfirmationMethod>urn:com:sun:identity</saml:ConfirmationMethod>
+										<saml:SubjectConfirmationData>AQIC5wM2LY4SfcyiHcLQGwOxoC+xunIdhMBk+1aBejexFyE=@AAJTSQACMDE=#</saml:SubjectConfirmationData>
+									</saml:SubjectConfirmation>
+								</saml:Subject>
+								<saml:SubjectLocality IPAddress="172.16.143.51"/>
+							</saml:AuthenticationStatement>
+						</saml:Assertion>
+					</saml:SubjectConfirmationData>
+				</saml:SubjectConfirmation>
+			</saml:Subject>
+			<saml:Attribute AttributeName="ssbAssertionVersion" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>1.1</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="cn" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Seven User Mr</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uid" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000109896</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="ssbSessionRoleUid" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000117896</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="ssbMode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>0</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Q14</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>GREATER MANCHESTER STRATEGIC HA</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Perform RA Activities</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B0008</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin &amp; Clerical":"Admin":"Registration Authority Agent"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000111890</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S0080:G0440:R5090</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Q14</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>GREATER MANCHESTER STRATEGIC HA</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Manage RA Activities</saml:AttributeValue>
+				<saml:AttributeValue>Perform RA Activities</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B0005</saml:AttributeValue>
+				<saml:AttributeValue>B0008</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin &amp; Clerical":"Management - A &amp; C":"Registration Authority Manager"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000115894</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S0080:G0450:R5080</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Q14</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>GREATER MANCHESTER STRATEGIC HA</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Approve RA Requests</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B0263</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin and Clerical":"Admin and Clerical":"Privacy Officer"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000117896</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S8002:G8003:R0001</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Y51</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>THE NORTH MIDLANDS AND EAST PROGRAMME FOR IT (NMEPFIT)</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Perform RA Activities</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B0008</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin &amp; Clerical":"Admin":"Registration Authority Agent"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000113892</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S0080:G0440:R5090</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Y51</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>THE NORTH MIDLANDS AND EAST PROGRAMME FOR IT (NMEPFIT)</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Perform RA Activities</saml:AttributeValue>
+				<saml:AttributeValue>Manage RA Activities</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B0008</saml:AttributeValue>
+				<saml:AttributeValue>B0005</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin &amp; Clerical":"Management - A &amp; C":"Registration Authority Manager"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000114893</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S0080:G0450:R5080</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsIdCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Y51</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="o" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>THE NORTH MIDLANDS AND EAST PROGRAMME FOR IT (NMEPFIT)</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctions" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>Approve RA Requests</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsBusinessFunctionsCodes" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>B1300</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRole" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>"Admin and Clerical":"Admin and Clerical":"Privacy Officer"</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="uniqueIdentifier" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>240000116895</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute AttributeName="nhsJobRoleCode" AttributeNamespace="http://www.syntegra.com">
+				<saml:AttributeValue>S8002:G8003:R0001</saml:AttributeValue>
+			</saml:Attribute>
+		</saml:AttributeStatement>
+	</saml:Assertion>
+</samlp:Response>

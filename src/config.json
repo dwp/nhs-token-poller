@@ -1,0 +1,17 @@
+{
+	"project" : "",
+	"name": "nhs-token-poller",
+	"description": "Worker Service",
+	"author": "DWP/HSCIC",
+	"debugLevel": "debug",
+	"workerServicePollIntervalMillis" : 5000,
+	"workerServicePort" : 9002,
+	"ssbProxyUrl": "http://localhost",
+	"ssbProxyUrlPort": 9001,
+	"dequeueFromBridgeToWorkerMethod": "dequeueFromBridgeToWorker",
+	"enqueueFromWorkerBackToBridgeMethod": "enqueueFromWorkerBackToBridge",
+	"authConfig": {
+		"host": "gas.lh.iam.spine2.ncrs.nhs.uk",
+		"useFakeAuth": true
+	}
+}
