@@ -41,7 +41,6 @@ module.exports = {
 		function onCheckBridgeQueuePollComplete (err, response, body) {
 			
 			if (err || response.statusCode != 200){
-				commonTools.systemEventData('Most recent Poll status', 'Error polling Bridge: ' + commonTools.prettyPrintError(err));
 				
 				var logMe = { 'targets' : { 
 						'verifyToPdsBridgePortUri' : getSsbProxyUrl(),
@@ -70,16 +69,22 @@ module.exports = {
 			'token' : queueItem.token 
 		}
 	
-		authClient.roleAssertion(message, onPdsLookupFinish);
+		authClient.roleAssertion(message, onAuthComplete);
 	
-		function onPdsLookupFinish (err, pdsResult){
+		function onAuthComplete (err, pdsResult){
 			
-			var returnData = {
-				'correlationId' : queueItem.correlationId,
-				'payload' : pdsResult,
+			//Handle Errors 
+			if (err) {
+				commonTools.consoleDumpError('error', 'onAuthComplete.err', err);
+			} else {
+				
+				var returnData = {
+					'correlationId' : queueItem.correlationId,
+					'payload' : pdsResult
+				}
+				
+				request.post(buildPost(configJson.enqueueFromWorkerBackToBridgeMethod, returnData), onProcessMessagePostComplete);
 			}
-			
-			request.post(buildPost(configJson.enqueueFromWorkerBackToBridgeMethod, returnData), onProcessMessagePostComplete);
 			
 			function onProcessMessagePostComplete (err, response, body) {
 				if (err){
