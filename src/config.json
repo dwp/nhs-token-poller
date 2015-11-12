@@ -6,7 +6,7 @@
 	"debugLevel": "debug",
 	"workerServicePollIntervalMillis" : 5000,
 	"workerServicePort" : 9002,
-	"ssbProxyUrl": "http://scdockertest.cloudapp.net",
+	"ssbProxyUrl": "https://test.dwp1",
 	"ssbProxyUrlPort": 9001,
 	"dequeueFromBridgeToWorkerMethod": "dequeueFromBridgeToWorker",
 	"enqueueFromWorkerBackToBridgeMethod": "enqueueFromWorkerBackToBridge",

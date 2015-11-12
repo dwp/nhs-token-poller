@@ -6,6 +6,11 @@ var express = require('express');
 var configJson = require('./config.json');
 var commonTools = require('./common-tools');
 var xml2js = require('xml2js');
+var fs = require('fs');
+
+var cisKeyText = fs.readFileSync("certs/test.dwp2.key");
+var cisCertText = fs.readFileSync("certs/test.dwp2.crt");
+var cisCaText = fs.readFileSync("certs/nis1combinedroot.pem");
 
 //Constants and settings
 var pollIntervalMillis = parseInt(configJson.workerServicePollIntervalMillis);
@@ -105,6 +110,9 @@ function getSsbProxyUrl() {
 
 function buildGet(targetUri) {
 	return { 
+		key: cisKeyText,
+		cert: cisCertText,
+		ca: cisCaText,		 		
 		uri: getSsbProxyUrl() + targetUri,
 		method: 'GET',
 		json: true
@@ -112,7 +120,10 @@ function buildGet(targetUri) {
 };
 
 function buildPost(targetUri, messagebody) {
-	return { 
+	return {
+		key: cisKeyText,
+		cert: cisCertText,
+		ca: cisCaText,		 
 		uri: getSsbProxyUrl() + targetUri,
 		method: 'POST',
 		json: true,
